@@ -1,6 +1,6 @@
 Question 1.1 :
 
-I'l y'a une en-tête celle-ci : response.end("<html><h1>My first server!<h1></html>");
+I'l y'a une en-tête celle-ci : response.end("<html><h1>My first server!</h1></html>");
 Dans l'en-tête de la page il y'a uniquement le style
 
 Question 1.2 :
@@ -41,15 +41,15 @@ async function requestListener(_request, response) {
 
 Question 1.6 :
 
-La commande npm install cross-env --save a ajouté cross-env dans les dépendances de package.json, et npm install nodemon --save-dev a ajouté nodemon dans les dépendances de développement ainsi que mis à jour node_modules/ et package-lock.json.
+La commande npm install cross-env --save a ajouté cross-env dans les dépendances de package.json, et npm install nodemon --save-dev a ajouté nodemon dans les dépendances de développement ainsi que mis à jour node_modules/ et package-lock.json
 
 Question 1.7 :
 
-http-dev lance le serveur avec nodemon en mode développement, alors que http-prod l’exécute avec node en mode production.
+http-dev lance le serveur avec nodemon en mode développement, alors que http-prod l’exécute avec node en mode production
 
 Question 1.8 :
 
-/index.html et /random.html renvoient 200, tandis que / et /dont-exist renvoient 404.
+/index.html et /random.html renvoient 200, tandis que / et /dont-exist renvoient 404
 
 Question 2.1:
 
@@ -62,4 +62,14 @@ loglevel : https://www.npmjs.com/package/loglevel
 morgan : https://www.npmjs.com/package/morgan
 
 Question 2.2 :
+
+Les routes /, /index.html et /random/:nb répondent correctement avec le contenu attendu
+
+Question 2.3 :
+
+Express ajoute de nouveaux en-têtes comme X-Powered-By, Last-Modified, ETag et Cache-Control
+
+Question 2.4 :
+
+L’événement listening est déclenché lorsque le serveur est prêt et écoute sur le port configuré
 
