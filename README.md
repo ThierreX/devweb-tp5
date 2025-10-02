@@ -1,6 +1,9 @@
+///////////////////// devweb-TP5 /////////////////////
+
+
 Question 1.1 :
 
-I'l y'a une en-tête celle-ci : response.end("<html><h1>My first server!</h1></html>");
+I'l y'a une en-tête celle-ci : response.end("<html><h1>My first server!<h1></html>");
 Dans l'en-tête de la page il y'a uniquement le style
 
 Question 1.2 :
@@ -45,11 +48,11 @@ La commande npm install cross-env --save a ajouté cross-env dans les dépendanc
 
 Question 1.7 :
 
-http-dev lance le serveur avec nodemon en mode développement, alors que http-prod l’exécute avec node en mode production
+http-dev lance le serveur avec nodemon en mode développement (redémarrage auto lors d'un changement), alors que http-prod l’exécute avec node en mode production (sans redémarrage auto)
 
 Question 1.8 :
 
-/index.html et /random.html renvoient 200, tandis que / et /dont-exist renvoient 404
+/index.html renvoient 200, /random.html renvoient 200, tandis que / et /dont-exist renvoient 404
 
 Question 2.1:
 
@@ -71,5 +74,19 @@ Express ajoute de nouveaux en-têtes comme X-Powered-By, Last-Modified, ETag et 
 
 Question 2.4 :
 
-L’événement listening est déclenché lorsque le serveur est prêt et écoute sur le port configuré
+Lorsque le serveur Express a fini de se lier au port/host et est prêt à recevoir des connexions (listening).
 
+Question 2.5 :
+
+L’option index (par défaut à index.html) redirige / vers /index.html dans express.static.
+
+Question 2.6 :
+
+style.css est renvoyé en 200 lors du premier chargement, en 304 lors d’un rafraîchissement normal, et en 200 lors d’un rafraîchissement forcé.
+
+Question 2.7 :
+
+la pile d’erreur (stack) est affichée dans error.ejs.
+seule l’erreur et son code sont affichés (pas de stack).
+
+///////////////////// devweb-TP6 /////////////////////
